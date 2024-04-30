@@ -1,0 +1,9 @@
+
+---
+title: "Exercices"
+---
+Vous allez pouvoir vous exercer de manière efficace ci dessous. Amusez-vous bien !
+
+<iframe src="exos/example.html" width="1200px" height="600px"></iframe>
+
+

@@ -1,0 +1,23 @@
+project:
+  type: website
+
+execute :
+  freeze : auto
+  
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Leçon
+      - href: introduction.qmd
+        text: Page d'acceuil 
+      - href: about.qmd
+        text: Exercices
+
+format:
+  html:
+    theme: cyborg 
+    css: styles.css
+    toc: true
+
+

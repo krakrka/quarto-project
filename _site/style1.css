@@ -1,0 +1,76 @@
+/* Styles spécifiques à la page */
+
+/* En-tête */
+h1 {
+    color: #cc9900; /* Couleur de texte pour les titres principaux */
+    font-size: 36px; /* Taille de police pour les titres principaux */
+}
+
+h2 {
+    color: #ffcc66; /* Couleur de texte pour les sous-titres */
+    font-size: 24px; /* Taille de police pour les sous-titres */
+}
+
+h3 {
+    color: #fff; /* Couleur de texte pour les sous-titres moins importants */
+    font-size: 20px; /* Taille de police pour les sous-titres moins importants */
+}
+
+/* Paragraphe */
+p {
+    color: #eee; /* Couleur de texte pour les paragraphes */
+    font-size: 16px; /* Taille de police pour les paragraphes */
+}
+
+/* Liens */
+a {
+    color: #99ccff; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+a:hover {
+    color: #66a3ff; /* Couleur des liens au survol */
+}
+
+/* Liste */
+ul, ol {
+    color: #ccc; /* Couleur du texte pour les listes */
+}
+
+/* Élément de liste */
+li {
+    margin-bottom: 5px; /* Marge entre les éléments de liste */
+}
+
+/* Tableau */
+table {
+    width: 100%; /* Largeur de tableau à 100% */
+    border-collapse: collapse; /* Fusionne les bordures de tableau */
+}
+
+th, td {
+    padding: 8px; /* Ajoute de l'espace à l'intérieur des cellules */
+    border-bottom: 1px solid #ccc; /* Ajoute une bordure en bas de chaque ligne */
+}
+
+th {
+    background-color: #222; /* Couleur de fond pour les en-têtes de tableau */
+    color: #fff; /* Couleur de texte pour les en-têtes de tableau */
+}
+
+/* Code */
+code {
+    color: #66ff66; /* Couleur de texte pour les blocs de code */
+    font-family: monospace; /* Police de caractères pour les blocs de code */
+    background-color: #333; /* Couleur de fond pour les blocs de code */
+    padding: 2px 4px; /* Ajoute de l'espace à l'intérieur des blocs de code */
+    border-radius: 3px; /* Arrondit les coins des blocs de code */
+}
+
+/* Citation */
+blockquote {
+    color: #ccc; /* Couleur de texte pour les citations */
+    font-style: italic; /* Style de police pour les citations */
+    border-left: 5px solid #666; /* Bordure à gauche des citations */
+    padding-left: 10px; /* Ajoute de l'espace à gauche des citations */
+}

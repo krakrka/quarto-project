@@ -1,0 +1,59 @@
+---
+title : "LepetitCodeur"
+---
+
+<html>
+<head>
+    <title>LepetitCodeur</title>
+    <style>
+        body {
+            background-image: url('C:/Users/ashra/OneDrive/Documents/IA SCHOOL/PROGRAMMATION_Python/DATA/cod.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white; /* Par défaut, texte en blanc */
+            /* Ajoutons une ombre portée sur le texte pour le distinguer mieux du fond */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre portée avec une opacité de 50% */
+        }
+        
+        /* Si l'image de fond est sombre, change la couleur du texte en clair */
+        body.dark-bg {
+            color: #f0f0f0; /* Couleur de texte claire */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue dans LepetitCodeur</h1>
+    <p>Vous allez apprendre l'histoire magnifique de R, vous pourrez apprendre grâce à une leçon de qualité et vous exercer.</p>
+    <h2
+    <p> © BerbouchiMohamed, tous droits réservés 2024</p>
+
+    <script>
+        // Obtenir les couleurs de l'image de fond pour déterminer si elle est sombre ou claire
+        const img = new Image();
+        img.src = 'C:/Users/ashra/OneDrive/Documents/IA SCHOOL/PROGRAMMATION_Python/DATA/cod.jpg';
+        img.onload = function() {
+            // Créer un canvas pour extraire les données de couleur de l'image
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            const { data } = ctx.getImageData(0, 0, img.width, img.height);
+
+            // Calculer la luminosité moyenne de l'image
+            let totalBrightness = 0;
+            for (let i = 0; i < data.length; i += 4) {
+                const r = data[i];
+                const g = data[i + 1];
+                const b = data[i + 2];
+                // Utiliser la formule de luminosité standard (0.299R + 0.587G + 0.114B)
+                totalBrightness += 0.299 * r + 0.587 * g + 0.114 * b;
+            }
+            const averageBrightness = totalBrightness / (img.width * img.height);
+
+            // Ajouter la classe 'dark-bg' au corps si l'image de fond est sombre
+            if (averageBrightness < 127.5) {
+                document.body.classList.add('dark-bg');
+            }
+        };
+    </script>
+</body>
+</html>
