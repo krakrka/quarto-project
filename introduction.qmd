@@ -25,7 +25,7 @@ title : "LepetitCodeur"
 <body>
     <h1>Bienvenue dans LepetitCodeur</h1>
     <p>Vous allez apprendre l'histoire magnifique de R, vous pourrez apprendre grâce à une leçon de qualité et vous exercer.</p>
-    <p> © BerbouchiMohamed tout droits réservés 2024</p>
+    <p1> © Berbouchi Mohamed tout droits réservés 2024</p1>
 
     <script>
         // Obtenir les couleurs de l'image de fond pour déterminer si elle est sombre ou claire
