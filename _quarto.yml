@@ -16,7 +16,7 @@ website:
 
 format:
   html:
-    theme: cyborg 
+    theme: materia
     css: styles.css
     toc: true
 
